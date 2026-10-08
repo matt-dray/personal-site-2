@@ -1,0 +1,110 @@
+:root {
+  --display: "Betania Patmos", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+  --sans-font: "Inter", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+    margin: 0 0 6rem;
+}
+
+.wrap {
+  width: 640px;
+  max-width: 100%;
+  margin: 0;
+  padding: 4rem 1.5rem 5rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--display);
+  color: var(--accent);
+}
+
+/* Don't break, see https://stackoverflow.com/a/23940661 */
+.nobr {
+  white-space: nowrap;
+}
+
+.material-icons {
+    font-size: 0.75em;
+}
+
+
+/* HEADER */
+
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+
+/* NAV */
+
+
+header nav a,
+header nav a:visited {
+  font-size: 0.75rem;
+  margin: 0 1.2rem 0 0;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+header nav a:hover,
+header nav a.current,
+header nav a[aria-current="page"],
+header nav a[aria-current="true"] {
+  background: none;
+  border: none;
+  color: var(--accent);
+}
+
+header nav a.current,
+header nav a[aria-current="page"],
+header nav a[aria-current="true"] {
+  font-weight: bold;
+}
+
+
+/* FOOTER */
+
+
+footer {
+  display: flex;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  gap: 1.5rem;
+}
+
+footer a,
+footer a:visited {
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: normal;
+}
+
+footer a:hover,
+footer a:focus-visible {
+  color: var(--accent);
+}
+
+footer a.current,
+footer a[aria-current="page"],
+footer a[aria-current="true"] {
+  color: var(--accent);
+  font-weight: bold;
+}
